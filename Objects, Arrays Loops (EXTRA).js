@@ -53,14 +53,15 @@ for (let i = 0; i < ex4_array.length; i++)
 */
 console.log("\n---------------------EXERCISE 5---------------------\n")
 
-let ex5_array = [1,2,3,4,5];
+let ex5_array = [2,2,2,2,2,3];
 console.log("Original array: ", ex5_array);
 
 for (let i = 0; i < ex5_array.length; i++)
 {
     if (ex5_array[i] % 2 === 0)
     {
-        ex5_array.splice(i,1);   
+        ex5_array.splice(i,1);
+        i -= 1;
     }
 }
 console.log("Deleted the even entries: ", ex5_array);
