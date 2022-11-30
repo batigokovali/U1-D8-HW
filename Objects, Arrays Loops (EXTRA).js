@@ -71,6 +71,11 @@ console.log("Deleted the even entries: ", ex5_array);
 */
 console.log("\n---------------------EXERCISE 6---------------------\n")
 
+let ex6_string = "I love my cat, he is adorable!"
+console.log("This is the original text: ")
+
+ex6_string = ex6_string.replace(/[aeiou]/gi, ""); //g means global, i means case insensitive.
+console.log("All the vowels are removed from the text:", ex6_string);
 
 /* EXTRA 7
  Write a piece of code for increasing all the numerical values in a array by 1.
